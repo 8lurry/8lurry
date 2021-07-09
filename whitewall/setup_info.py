@@ -10,7 +10,7 @@ SETUP_INFO = dict(
     description=('8lurry on the wire'),
     author='8lurry',
     author_email='sharifmehedi24@outlook.com',
-    url="https://gitlab.com/lino-framework/whitewall",
+    url="https://github.com/8lurry/8lurry",
     license_files=['COPYING'],
     test_suite='tests')
 
