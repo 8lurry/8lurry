@@ -1,0 +1,59 @@
+# Translations template for whitewall.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the whitewall project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: whitewall 0.2.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-03-29 13:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: whitewall/lib/whitewall/help_texts.py:7
+msgid "The standard migrator for Whitewall."
+msgstr ""
+
+#: whitewall/lib/whitewall/help_texts.py:8
+msgid "See lino.core.plugin.Plugin."
+msgstr ""
+
+#: whitewall/lib/whitewall/help_texts.py:9
+msgid "Layout of User Detail in Whitewall."
+msgstr ""
+
+#: whitewall/lib/whitewall/user_types.py:15
+msgid "Anonymous"
+msgstr ""
+
+#: whitewall/lib/whitewall/user_types.py:17
+msgid "User"
+msgstr ""
+
+#: whitewall/lib/whitewall/user_types.py:18
+msgid "Staff"
+msgstr ""
+
+#: whitewall/lib/whitewall/user_types.py:19
+msgid "Administrator"
+msgstr ""
+
+#: whitewall/lib/lets/__init__.py:20
+msgid "Local Exchange"
+msgstr ""
+
+#: whitewall/lib/users/desktop.py:21
+msgid "General"
+msgstr ""
+
+#: whitewall/lib/users/desktop.py:33
+msgid "Contact"
+msgstr ""
+
