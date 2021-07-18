@@ -1,2 +1,2 @@
 make html
-pandoc memos/secmo/secmo.rst -f rst -t html -s -o memos/no_user_passwd_secmo.html
+pandoc memos/secmo/secmo.rst -f rst -t html -s -o _build/html/memos/decentralized_secmo.html

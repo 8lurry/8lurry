@@ -6,4 +6,4 @@ No User Password Security Model
 
 .. raw:: html
 
-    <embed style="width: 100%;" src="https://github.com/8lurry/8lurry/docs/memos/no_user_passwd_secmo.html">
+    <embed style="width: 100%; height: 70vh;" src="decentralized_secmo.html">
