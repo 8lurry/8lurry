@@ -1,7 +1,0 @@
-===
-API
-===
-
-.. automodule:: whitewall
-
-
