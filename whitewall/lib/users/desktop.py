@@ -25,6 +25,7 @@ class UserDetail(UserDetail):
     username user_type:20
     language time_zone
     id created modified
+    signature decrypt
     """
 
     contact = dd.Panel("""

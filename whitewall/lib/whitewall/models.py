@@ -7,3 +7,11 @@
 
 """
 
+from lino.api import dd, _
+
+class Appunti(dd.Model):
+
+    class Meta:
+        verbose_name = _("Note")
+
+    fields = ['date', 'topic', 'title', 'content', 'author', 'album']

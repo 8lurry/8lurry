@@ -10,9 +10,10 @@
 from lino.api import dd, _
 
 from lino.modlib.users.models import *
+from .mixins import UserKeys
 
 
-class User(User):
+class User(User, UserKeys):
 
     class Meta(User.Meta):
         abstract = dd.is_abstract_model(__name__, 'User')
