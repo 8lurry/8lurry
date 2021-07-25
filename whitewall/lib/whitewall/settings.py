@@ -14,11 +14,12 @@ class Site(Site):
     version = SETUP_INFO['version']
     url = SETUP_INFO['url']
 
-    use_topbar_navigation = True
     demo_fixtures = ['std', 'demo', 'demo2']
     user_types_module = 'whitewall.lib.whitewall.user_types'
     migration_class = 'whitewall.lib.whitewall.migrate.Migrator'
     custom_layouts_module = 'whitewall.lib.whitewall.layouts'
+    theme_name = 'whitewall'
+
 
     def get_installed_apps(self):
         """Implements :meth:`lino.core.site.Site.get_installed_apps`.

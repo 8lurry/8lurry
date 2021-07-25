@@ -17,7 +17,7 @@
 
 """
 
-from whitewall.lib.whitewall.settings import *
+from .demo import *
 
 USE_TZ = True
 TIME_ZONE = 'UTC'

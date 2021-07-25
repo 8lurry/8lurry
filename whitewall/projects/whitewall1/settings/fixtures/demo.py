@@ -16,13 +16,13 @@ def findbyname(model, name):
     return model.objects.get(name=name)
 
 
-def objects():
-    """This will be called by the :ref:`dpy` deserializer during
-    :manage:`prep` and must yield a list of object instances to
-    be saved.
-
-    """
-    User = rt.models.users.User
-    UserTypes = rt.models.users.UserTypes
-
-    yield User(username='8lurry', user_type=UserTypes.admin, language="en")
+# def objects():
+#     """This will be called by the :ref:`dpy` deserializer during
+#     :manage:`prep` and must yield a list of object instances to
+#     be saved.
+#
+#     """
+#     User = rt.models.users.User
+#     UserTypes = rt.models.users.UserTypes
+#
+#     yield User(username='8lurry', user_type=UserTypes.admin, language="en")

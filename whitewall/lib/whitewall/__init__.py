@@ -14,4 +14,3 @@ The main plugin for Whitewall.
     user_types
 
 """
-

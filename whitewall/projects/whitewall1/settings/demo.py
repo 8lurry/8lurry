@@ -6,7 +6,8 @@
 
 import datetime
 
-from ..settings import *
+from whitewall.lib.whitewall.settings import *
+# from ..settings import *
 
 
 class Site(Site):

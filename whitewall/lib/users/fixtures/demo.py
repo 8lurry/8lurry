@@ -1,1 +1,1 @@
-from lino.modlib.users.fixtures.demo import *
+# from lino.modlib.users.fixtures.demo import *

@@ -21,6 +21,5 @@ from lino.modlib.users import Plugin
 
 
 class Plugin(Plugin):
-   
-    extends_models = ['User']
 
+    extends_models = ['User']
