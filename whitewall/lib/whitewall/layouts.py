@@ -8,5 +8,5 @@ from lino.api import _
 DashboardLayouts.clear()
 add = DashboardLayouts.add_item
 add("default", _("Default dashboard"), """
-blogs.Entries
+blogs.PublicEntries
 """)

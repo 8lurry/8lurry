@@ -12,7 +12,7 @@ from lino_xl.lib.blogs.roles import BlogsReader
 from lino.modlib.users.choicelists import UserTypes
 from django.utils.translation import gettext_lazy as _
 
-class AnonUser(BlogsReader, UserRole):
+class AnonUser(BlogsReader):
     pass
 
 class AuthenticatedUser(AnonUser, SiteUser):

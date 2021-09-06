@@ -47,9 +47,13 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'memos/secmo/*.rst']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+html_static_path = ['_static']
+
 import murray
 html_theme = 'murray'
 html_theme_path = [murray.get_html_theme_path()]
+html_css_files = ['murray/custom-style.css']
+
 # html_theme = 'alabaster'
 
 # Add any paths that contain custom static files (such as style sheets) here,

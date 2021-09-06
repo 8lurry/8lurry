@@ -17,6 +17,8 @@ class Site(Site):
 
     languages = "en bn"
 
+    demo_fixtures = []
+
     default_ui = 'lino_react.react'
 
 SITE = Site(globals())
