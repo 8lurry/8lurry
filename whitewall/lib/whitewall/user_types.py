@@ -7,22 +7,29 @@
 """Defines the standard user roles for Whitewall."""
 
 
-from lino.core.roles import UserRole, SiteAdmin, SiteUser, SiteStaff
+from lino.core.roles import SiteAdmin, SiteUser, SiteStaff
+from lino.modlib.office.roles import OfficeUser, OfficeOperator, OfficeStaff
 from lino_xl.lib.blogs.roles import BlogsReader
+from lino_xl.lib.contacts.roles import *
 from lino.modlib.users.choicelists import UserTypes
 from django.utils.translation import gettext_lazy as _
+
 
 class AnonUser(BlogsReader):
     pass
 
-class AuthenticatedUser(AnonUser, SiteUser):
+
+class AuthenticatedUser(AnonUser, SiteUser, OfficeUser, SimpleContactsUser):
     pass
 
-class Moderator(AuthenticatedUser, SiteStaff):
+
+class Moderator(AuthenticatedUser, SiteStaff, OfficeOperator, ContactsUser):
     pass
 
-class SuperUser(Moderator, SiteAdmin):
+
+class SuperUser(Moderator, SiteAdmin, OfficeStaff, ContactsStaff):
     pass
+
 
 UserTypes.clear()
 add = UserTypes.add_item
