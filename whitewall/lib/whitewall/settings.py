@@ -4,6 +4,7 @@
 # License: GNU Affero General Public License v3 (see file COPYING for details)
 
 from lino.projects.std.settings import *
+from lino.core.auth.utils import activate_social_auth_testing
 from whitewall import SETUP_INFO
 
 
@@ -35,6 +36,8 @@ class Site(Site):
         yield 'whitewall.lib.users'
         yield 'whitewall.lib.whitewall'
         yield 'lino.modlib.memo'
+        yield 'lino.modlib.uploads'
+        yield 'lino.modlib.publisher'
         yield 'lino_xl.lib.contacts'
         yield 'lino_xl.lib.cal'
         yield 'lino_xl.lib.calview'
@@ -49,3 +52,6 @@ class Site(Site):
 
     def setup_quicklinks(self, ut, tb):
         super(Site, self).setup_quicklinks(ut, tb)
+
+
+activate_social_auth_testing(globals(), has_google=True)

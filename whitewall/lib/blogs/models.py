@@ -4,6 +4,7 @@
 # License: GNU Affero General Public License v3 (see file COPYING for details)
 
 from lino_xl.lib.blogs.models import *
+from lino.modlib.publisher.choicelists import PublisherViews
 
 
 class Entry(Entry):
@@ -13,3 +14,5 @@ class Entry(Entry):
 
     # fields = ['date', 'topic', 'title', 'content', 'author', 'album']
 
+
+PublisherViews.add_item_lazy('blogs', PublicEntries)
