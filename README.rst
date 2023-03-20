@@ -3,7 +3,7 @@
 Sharif Mehedi (8lurry)
 ======================
 
-Most of my recent profession work is on `gitlab <https://gitlab.com/8lurry>`__.
+Most of my recent professional work is on `gitlab <https://gitlab.com/8lurry>`__.
 Please be sure to check it out if you are interested.
 
 - ``8lurry`` is my identity on the internet.
