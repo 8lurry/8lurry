@@ -64,12 +64,12 @@ hQIDAQAB</p>
     def get_plugin_configs(self):
         yield super(Site, self).get_plugin_configs()
         yield "system", "use_dashboard_layouts", True
-        yield "users", "allow_online_registration", True
-        yield "users", "third_party_authentication", True
+        # yield "users", "allow_online_registration", True
+        # yield "users", "third_party_authentication", True
         yield "linod", "use_channels", True
 
     def setup_quicklinks(self, ut, tb):
         super(Site, self).setup_quicklinks(ut, tb)
 
 
-activate_social_auth_testing(globals(), google=True)
+# activate_social_auth_testing(globals(), google=True)
