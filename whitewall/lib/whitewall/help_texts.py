@@ -3,6 +3,10 @@
 from django.utils.translation import gettext_lazy as _
 
 help_texts = {
-    'whitewall.lib.whitewall.migrate.Migrator' : _("""The standard migrator for Whitewall."""),
-    'whitewall.lib.users.UserDetail' : _("""Layout of User Detail in Whitewall."""),
+    "whitewall.lib.whitewall.migrate.Migrator": _(
+        """The standard migrator for Whitewall."""
+    ),
+    "whitewall.lib.users.UserDetail": _(
+        """Layout of User Detail in Whitewall."""
+    ),
 }

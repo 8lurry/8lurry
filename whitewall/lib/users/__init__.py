@@ -17,9 +17,8 @@ Whitewall extension of :mod:`lino.modlib.users`.
 
 """
 
-from lino.modlib.users import Plugin
+from lino.modlib import users
 
 
-class Plugin(Plugin):
-
-    extends_models = ['User']
+class Plugin(users.Plugin):
+    extends_models = ["User"]

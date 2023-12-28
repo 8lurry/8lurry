@@ -4,5 +4,7 @@
 # License: GNU Affero General Public License v3 (see file COPYING for details)
 
 from .demo import *
+from .demo import DATABASES
+
 SITE = Site(globals())
-DATABASES['default']['NAME'] = ':memory:'
+DATABASES["default"]["NAME"] = ":memory:"

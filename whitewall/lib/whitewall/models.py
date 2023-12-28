@@ -6,5 +6,8 @@
 """The :xfile:`models.py` module for this plugin.
 
 """
-
 from lino.api import dd, _
+
+
+class Home(dd.Table):
+    pass

@@ -3,7 +3,7 @@
 from whitewall import SETUP_INFO
 from lino.utils.pythontest import TestCase
 
-class PackagesTests(TestCase):
 
+class PackagesTests(TestCase):
     def test_packages(self):
-        self.run_packages_test(SETUP_INFO['packages'])
+        self.run_packages_test(SETUP_INFO["packages"])

@@ -10,7 +10,7 @@
 from lino.core.roles import SiteAdmin, SiteUser, SiteStaff
 from lino.modlib.office.roles import OfficeUser, OfficeOperator, OfficeStaff
 from lino_xl.lib.blogs.roles import BlogsReader
-from lino_xl.lib.contacts.roles import *
+from lino_xl.lib.contacts.roles import SimpleContactsUser, ContactsUser, ContactsStaff
 from lino.modlib.users.choicelists import UserTypes
 from django.utils.translation import gettext_lazy as _
 
@@ -33,8 +33,14 @@ class SuperUser(Moderator, SiteAdmin, OfficeStaff, ContactsStaff):
 
 UserTypes.clear()
 add = UserTypes.add_item
-add('000', _("Anonymous"),        AnonUser, 'anonymous',
-    readonly=True, authenticated=False)
-add('100', _("User"),             AuthenticatedUser,  'user')
-add('500', _("Moderator"),        Moderator, 'moderator')
-add('900', _("Administrator"),    SuperUser, 'admin')
+add(
+    "000",
+    _("Anonymous"),
+    AnonUser,
+    "anonymous",
+    readonly=True,
+    authenticated=False,
+)
+add("100", _("User"), AuthenticatedUser, "user")
+add("500", _("Moderator"), Moderator, "moderator")
+add("900", _("Administrator"), SuperUser, "admin")

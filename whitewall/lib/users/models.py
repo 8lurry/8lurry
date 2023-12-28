@@ -7,13 +7,12 @@
 
 """
 
-from lino.api import dd, _
-
+from lino.api import dd
+from lino.modlib.users import models as parent_module
 from lino.modlib.users.models import *
 from .mixins import UserKeys
 
 
-class User(User, UserKeys):
-
-    class Meta(User.Meta):
-        abstract = dd.is_abstract_model(__name__, 'User')
+class User(parent_module.User, UserKeys):
+    class Meta(parent_module.User.Meta):
+        abstract = dd.is_abstract_model(__name__, "User")

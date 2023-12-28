@@ -13,13 +13,14 @@ ROOTDIR = Path(__file__).parent.parent
 SETUP_INFO = {}
 
 # load SETUP_INFO:
-filename = ROOTDIR.child('whitewall', 'setup_info.py')
-exec(compile(open(filename, "rb").read(), filename, 'exec'))
+filename = ROOTDIR.child("whitewall", "setup_info.py")
+exec(compile(open(filename, "rb").read(), filename, "exec"))
 
 from lino.utils.pythontest import TestCase
 
 import os
-#os.environ['DJANGO_SETTINGS_MODULE'] = "whitewall.settings.test"
+
+# os.environ['DJANGO_SETTINGS_MODULE'] = "whitewall.settings.test"
 
 
 # class BaseTestCase(TestCase):
@@ -28,27 +29,23 @@ import os
 
 
 class PackagesTests(TestCase):
-
     def test_packages(self):
-        self.run_packages_test(SETUP_INFO['packages'])
+        self.run_packages_test(SETUP_INFO["packages"])
 
 
 class SpecsTests(TestCase):
-
     def test_general(self):
-        self.run_simple_doctests('docs/specs/general.rst')
+        self.run_simple_doctests("docs/specs/general.rst")
 
     def test_db(self):
-        self.run_simple_doctests('docs/specs/db.rst')
+        self.run_simple_doctests("docs/specs/db.rst")
 
     def test_roles(self):
-        self.run_simple_doctests('docs/specs/roles.rst')
+        self.run_simple_doctests("docs/specs/roles.rst")
 
 
 class DemoTests(TestCase):
-    """Run tests on the demo projects.
-    """
+    """Run tests on the demo projects."""
 
     def test_whitewall(self):
-        self.run_django_manage_test('whitewall/projects/whitewall')
-
+        self.run_django_manage_test("whitewall/projects/whitewall")

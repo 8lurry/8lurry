@@ -9,17 +9,23 @@
 
 from lino.api import dd, _
 
-from lino.modlib.users.desktop import *
+from lino.modlib.users import ui as parent_module
+from lino.modlib.users.ui import *
+from lino.modlib.users.ui import Users
 
-class UserDetail(UserDetail):
+
+class UserDetail(parent_module.UserDetail):
     """Layout of User Detail in Whitewall."""
 
     main = "general contact"
 
-    general = dd.Panel("""
+    general = dd.Panel(
+        """
     box1
     remarks:40 users.AuthoritiesGiven:20
-    """, label=_("General"))
+    """,
+        label=_("General"),
+    )
 
     box1 = """
     username user_type:20
@@ -28,9 +34,13 @@ class UserDetail(UserDetail):
     signature decrypt
     """
 
-    contact = dd.Panel("""
+    contact = dd.Panel(
+        """
     first_name last_name initials
-    """, label=_("Contact"))
+    """,
+        label=_("Contact"),
+    )
+
 
 Users.detail_layout = UserDetail()
 

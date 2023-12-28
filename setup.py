@@ -1,7 +1,9 @@
 from setuptools import setup
-fn = 'whitewall/setup_info.py'
-with open(fn, "rb") as fd:
-    exec(compile(fd.read(), fn, 'exec'))
+from whitewall.setup_info import SETUP_INFO
 
-if __name__ == '__main__':
+fn = "whitewall/setup_info.py"
+with open(fn, "rb") as fd:
+    exec(compile(fd.read(), fn, "exec"))
+
+if __name__ == "__main__":
     setup(**SETUP_INFO)

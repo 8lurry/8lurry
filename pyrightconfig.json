@@ -1,0 +1,9 @@
+{
+  "include": [
+    "whitewall",
+    "docs/conf.py",
+    "tests",
+    "tasks.py",
+    "setup.py"
+  ]
+}

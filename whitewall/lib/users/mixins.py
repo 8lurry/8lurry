@@ -4,13 +4,15 @@
 
 from lino.api import dd, _
 
-class UserKeys(dd.Model):
 
+class UserKeys(dd.Model):
     class Meta:
         abstract = True
 
     signature = dd.CharField(
-        max_length=500, verbose_name=_('Signature key'), blank=True, null=True)
+        max_length=500, verbose_name=_("Signature key"), blank=True, null=True
+    )
 
     decrypt = dd.CharField(
-        max_length=500, verbose_name=_('Decryption key'), blank=True, null=True)
+        max_length=500, verbose_name=_("Decryption key"), blank=True, null=True
+    )

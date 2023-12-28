@@ -4,7 +4,6 @@
 # License: GNU Affero General Public License v3 (see file COPYING for details)
 
 from .demo import *
-SITE = Site(
-    globals(),
-    remote_user_header='REMOTE_USER')
+
+SITE = Site(globals(), remote_user_header="REMOTE_USER")
 DEBUG = True

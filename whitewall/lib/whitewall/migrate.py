@@ -8,11 +8,10 @@
 
 """
 
-from django.conf import settings
-from lino.api import dd, rt
-from lino.utils.dpy import Migrator, override
+from lino.utils import dpy
 
-class Migrator(Migrator):
+
+class Migrator(dpy.Migrator):
     """The standard migrator for Whitewall.
 
     This is used because
@@ -21,7 +20,7 @@ class Migrator(Migrator):
     to ``"whitewall.lib.whitewall.migrate.Migrator"``.
 
     """
+
     def migrate_from_0_0_1(self, globals_dict):
         # do something here
-        return '0.0.2'
-
+        return "0.0.2"

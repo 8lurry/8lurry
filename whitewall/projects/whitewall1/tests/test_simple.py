@@ -29,5 +29,6 @@ class SimpleTests(RemoteAuthTestCase):
         User = rt.models.users.User
         UserTypes = rt.models.users.UserTypes
 
-        robin = create_row(User, username='robin',
-                           user_type=UserTypes.admin, language="en")
+        robin = create_row(
+            User, username="robin", user_type=UserTypes.admin, language="en"
+        )

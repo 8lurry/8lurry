@@ -16,6 +16,6 @@
 
 from .setup_info import SETUP_INFO
 
-__version__ = SETUP_INFO.get('version')
+__version__ = SETUP_INFO.get("version")
 
-doc_trees = ['docs']
+doc_trees = ["docs"]
