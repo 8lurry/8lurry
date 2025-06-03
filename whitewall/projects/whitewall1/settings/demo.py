@@ -16,6 +16,7 @@ class Site(Site):
     languages = "en bn"
 
     demo_fixtures = ["std", "demo", "demo2"]
+    # demo_fixtures = ["std"]
 
     # default_ui = 'lino.modlib.extjs'
     default_ui = "lino_react.react"

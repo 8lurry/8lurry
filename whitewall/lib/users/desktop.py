@@ -31,7 +31,7 @@ class UserDetail(parent_module.UserDetail):
     username user_type:20
     language time_zone
     id created modified
-    signature decrypt
+    signature_key decrypt_key
     """
 
     contact = dd.Panel(
