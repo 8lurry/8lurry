@@ -50,7 +50,7 @@ class Site(StdSite):
             ('r', 'uploads.Uploads'),
             ('s', 'sources.Sources'),
             ('t', 'topics.Topics'),
-            ('u', 'users.Users')
+            # ('u', 'users.Users')
         )
 
 
